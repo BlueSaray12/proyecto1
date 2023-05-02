@@ -1,0 +1,77 @@
+*::after, 
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/62d777d8c217092a86100f14/0252b07c-d87f-4072-be10-5880103e2739/FoYRpqSaYAIEkbf.jpeg");
+    background-position: center;
+}
+
+img{
+    max-width: 100%;
+
+}
+
+header{
+    justify-content: space-between;
+    padding: 40px 50px;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.item{
+    border-radius: 10px;
+
+}
+
+.item:hover{
+    box-shadow: 0 10px 20px 20px rgba(40, 34, 34, 0.868);
+}
+
+.informacion{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.precio{
+    font-size: 18px;
+    font-weight: 900px;
+}
+
+.item img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+
+}
+
+.item figure{
+    overflow: hidden;
+
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.informacion button{
+    border: none;
+    background: none;
+    background-color: black;
+    color:white;
+    padding: 15px 10px;
+}
